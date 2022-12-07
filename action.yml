@@ -1,0 +1,21 @@
+name: Comment Pull Request
+description: Add or update a comment on a pull-request
+
+inputs:
+  message:
+    description: The body of the comment
+    required: true
+  github-token:
+    description: Github Token
+    default: ${{ github.token }}
+    required: false
+  pr-number:
+    description: Number of the Pull Request (can be retreive if action is triggered by pull request)
+    required: false
+  comment-tag:
+    description: Use for retreive and update a comment
+    required: false
+
+runs:
+  using: node16
+  main: dist/index.js
