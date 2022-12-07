@@ -9540,7 +9540,7 @@ function run() {
             return;
         }
         const tagPattern = commentTag
-            ? `<!-- pr-bob-actions/comment-pull-request tag: ${commentTag}`
+            ? `<!-- pr-bob-actions/comment-pull-request tag: ${commentTag} -->`
             : undefined;
         const body = commentTag ? `${message}\n${tagPattern}` : message;
         let commentId;
