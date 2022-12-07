@@ -10,7 +10,8 @@
   },
   "scripts": {
     "types-check": "tsc",
-    "build": "yarn types-check && ncc build -o dist ./src/index.ts"
+    "build": "yarn types-check && ncc build -o dist ./src/index.ts",
+    "test": "echo 'no tests'"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
